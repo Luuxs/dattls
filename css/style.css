@@ -1,0 +1,264 @@
+/* ==========================================================================
+   PALETA DE COLORES OFICIAL - APUESTA TOTAL
+   ========================================================================== */
+:root {
+    --bg-dark: #121214;        /* Fondo general oscuro de la plataforma online */
+    --panel-bg: #1a1a1e;       /* Fondo de las secciones y contenedores */
+    --border-color: #29292e;   /* Líneas divisorias sutiles */
+    --at-red: #e31c1c;         /* Rojo característico de Apuesta Total */
+    --at-red-hover: #b81414;   /* Rojo oscuro para efectos dinámicos */
+    --text-main: #ffffff;      /* Textos principales en blanco brillante */
+    --text-muted: #a0a0a5;     /* Textos secundarios o deshabilitados */
+    
+    /* Puestos del Ranking TOP 3 */
+    --gold: #f59e0b;           
+    --silver: #cbd5e1;         
+    --bronze: #b45309;         
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DE PANELES COMPATIBLE CON TV (COLUMNAS HORIZONTALES RÍGIDAS)
+   ========================================================================== */
+.dashboard-container {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px 0px;
+}
+
+.panel {
+    display: table-cell;
+    vertical-align: top;
+    background-color: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Distribución exacta a lo ancho de la pantalla de la TV */
+.main-table-section { width: 42%; }
+.ranking-section    { width: 33%; }
+.summary-section    { width: 25%; }
+
+h2 {
+    color: var(--text-main);
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-left: 4px solid var(--at-red); /* Detalle de marca en el borde izquierdo */
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   TABLA DE REGISTRO DIARIO (COLUMNA IZQUIERDA)
+   ========================================================================== */
+.table-wrapper {
+    overflow-x: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #0b0b0c;
+    color: var(--text-muted);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:hover {
+    background-color: #222226;
+}
+
+tbody td b {
+    color: var(--at-red); /* Resalta las fechas en rojo */
+}
+
+/* ==========================================================================
+   CUADROS TOP 3 INDEPENDIENTES (COLUMNA CENTRAL)
+   ========================================================================== */
+.card-top {
+    background: #0b0b0c;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.card-top h3 {
+    margin: 0 0 8px 0;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.card-top table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-top th, .card-top td {
+    border: 1px solid var(--border-color);
+    padding: 6px;
+    font-size: 0.85rem;
+}
+
+.card-top th {
+    background-color: #1a1a1e;
+    color: var(--text-muted);
+}
+
+/* Indicadores visuales de posiciones Oro, Plata, Bronce */
+.card-top tbody tr:nth-child(1) td:first-child { color: var(--gold); font-weight: bold; }
+.card-top tbody tr:nth-child(2) td:first-child { color: var(--silver); font-weight: bold; }
+.card-top tbody tr:nth-child(3) td:first-child { color: var(--bronze); font-weight: bold; }
+
+/* ==========================================================================
+   BLOQUES DE TOTALES ACUMULADOS (COLUMNA DERECHA)
+   ========================================================================== */
+.total-box {
+    padding: 25px 20px;
+    border-radius: 6px;
+    background-color: #0b0b0c;
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--at-red);
+    margin-bottom: 15px;
+}
+
+.total-box .label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.total-box .value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 8px;
+    color: var(--text-main);
+}
+
+/* ==========================================================================
+   CUADRO DINÁMICO SEMÁFORO: METAS MUNDIAL 2026 (LOOK OSCURO COMPATIBLE TV)
+   ========================================================================== */
+.cuadro-meta-global {
+    background-color: #0b0b0c; /* Fondo oscuro integrado al dashboard */
+    border-radius: 8px;
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+.titulo-meta-mundial {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.fila-meta-dato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.meta-sub {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff; /* Textos de metas en blanco */
+}
+
+.meta-valor-pct {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.avance-monto {
+    font-size: 0.85rem;
+    margin-top: 2px;
+    font-weight: 700;
+}
+
+.divisor-meta {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 12px 0;
+}
+
+/* === VARIACIONES DINÁMICAS DE COLOR (SEMÁFORO OSCURO) === */
+
+/* 🔴 Estado Crítico (Rojo) */
+.panel-meta-rojo {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);
+}
+.panel-meta-rojo .titulo-meta-mundial, 
+.panel-meta-rojo .meta-valor-pct,
+.panel-meta-rojo .avance-monto {
+    color: #ef4444 !important;
+}
+
+/* 🟠 Estado Intermedio (Naranja / Oro) */
+.panel-meta-naranja {
+    border-color: #f59e0b !important;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
+}
+.panel-meta-naranja .titulo-meta-mundial, 
+.panel-meta-naranja .meta-valor-pct,
+.panel-meta-naranja .avance-monto {
+    color: #f59e0b !important;
+}
+
+/* 🟢 Estado Completado (Verde) */
+.panel-meta-verde {
+    border-color: #10b981 !important;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+.panel-meta-verde .titulo-meta-mundial, 
+.panel-meta-verde .meta-valor-pct,
+.panel-meta-verde .avance-monto {
+    color: #10b981 !important;
+}
+
+/* ==========================================================================
+   RESPONSIVIDAD TRADICIONAL
+   ========================================================================== */
+@media (max-width: 1200px) {
+    .dashboard-container { display: block; }
+    .panel { display: block; width: 100%; margin-bottom: 20px; }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Teleservicios - Apuesta Total</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <section class="panel main-table-section">
+            <h2>Registro Diario</h2>
+            <div class="table-wrapper">
+                <table id="tabla-diaria">
+                    <thead>
+                        <tr>
+                            <th>Día / Fecha</th>
+                            <th>Clientes AD</th>
+                            <th>Monto AD</th>
+                            <th>Clientes RW</th>
+                            <th>Monto RW</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-datos">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel ranking-section">
+            <h2>Cuadro de Líderes (TOP 3)</h2>
+            
+            <div class="card-top" id="top-clientes-ad">
+                <h3>Top Clientes AD</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">TOP</th>
+                            <th style="width: 35%;">FECHA</th>
+                            <th>CANTIDAD</th>
+                        </tr>
+                    </thead>
+                    <tbody class="ranking-body"></tbody>
+                </table>
+            </div>
+
+            <div class="card-top" id="top-monto-ad">
+                <h3>Top Monto AD</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">TOP</th>
+                            <th style="width: 35%;">FECHA</th>
+                            <th>MONTO</th>
+                        </tr>
+                    </thead>
+                    <tbody class="ranking-body"></tbody>
+                </table>
+            </div>
+
+            <div class="card-top" id="top-clientes-rw">
+                <h3>Top Clientes RW</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">TOP</th>
+                            <th style="width: 35%;">FECHA</th>
+                            <th>CANTIDAD</th>
+                        </tr>
+                    </thead>
+                    <tbody class="ranking-body"></tbody>
+                </table>
+            </div>
+
+            <div class="card-top" id="top-monto-rw">
+                <h3>Top Monto RW</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">TOP</th>
+                            <th style="width: 35%;">FECHA</th>
+                            <th>MONTO</th>
+                        </tr>
+                    </thead>
+                    <tbody class="ranking-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel summary-section">
+    <h2>Resumen Acumulado</h2>
+    
+    <div class="total-box">
+        <div class="label">Total Monto AD</div>
+        <div class="value" id="total-general-ad">S/ 0.00</div>
+    </div>
+    
+    <div class="total-box" style="margin-bottom: 20px;">
+        <div class="label">Total Monto RW</div>
+        <div class="value" id="total-general-rw">S/ 0.00</div>
+    </div>
+
+    <div id="contenedor-metas">
+        </div>
+</section>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
