@@ -262,3 +262,125 @@ tbody td b {
     .dashboard-container { display: block; }
     .panel { display: block; width: 100%; margin-bottom: 20px; }
 }
+/* ==========================================================================
+   CONFIGURACIÓN GLOBAL (Ajuste de Fuentes)
+   ========================================================================== */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.1rem; /* AGRAANDADO: Subimos la base general de la letra */
+}
+
+h2 {
+    color: var(--text-main);
+    margin-top: 0;
+    font-size: 1.5rem; /* AGRANDADO: De 1.2rem a 1.5rem para los títulos principales */
+    font-weight: 700;
+    border-left: 5px solid var(--at-red);
+    padding-left: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   TABLA DE REGISTRO DIARIO (COLUMNA IZQUIERDA)
+   ========================================================================== */
+th, td {
+    padding: 14px 10px; /* AGRANDADO: Más espacio vertical entre filas */
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.05rem; /* AGRANDADO: Texto de la tabla principal más grande */
+}
+
+th {
+    background-color: #0b0b0c;
+    color: var(--text-muted);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem; /* AGRANDADO: Títulos de las columnas */
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   CUADROS TOP 3 INDEPENDIENTES (COLUMNA CENTRAL)
+   ========================================================================== */
+.card-top h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem; /* AGRANDADO: Títulos de los ránkings */
+    color: var(--text-main);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-top th, .card-top td {
+    padding: 8px; /* AGRANDADO: Espaciado interno en los rankings */
+    font-size: 1rem; /* AGRANDADO: Letras y números del TOP 3 */
+}
+
+/* ==========================================================================
+   BLOQUES DE TOTALES ACUMULADOS (COLUMNA DERECHA)
+   ========================================================================== */
+.total-box {
+    padding: 28px 20px; /* AGRANDADO: Cajas de totales más robustas */
+    border-radius: 6px;
+    background-color: #0b0b0c;
+    border: 1px solid var(--border-color);
+    border-top: 5px solid var(--at-red);
+    margin-bottom: 15px;
+}
+
+.total-box .label {
+    font-size: 0.85rem; /* AGRANDADO: Etiquetas de TOTAL MONTO */
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.total-box .value {
+    font-size: 2.2rem; /* AGRANDADO: Los millones acumulados ahora saltan a la vista */
+    font-weight: 800;
+    margin-top: 8px;
+    color: var(--text-main);
+}
+
+/* ==========================================================================
+   CUADRO DINÁMICO SEMÁFORO: METAS MUNDIAL 2026
+   ========================================================================== */
+.cuadro-meta-global {
+    border-radius: 8px;
+    padding: 25px; /* AGRANDADO: Más empaque para el cuadro de metas */
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.titulo-meta-mundial {
+    margin: 0 0 20px 0;
+    font-size: 1.4rem; /* AGRANDADO: El título superior del Mundial */
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.meta-sub {
+    font-size: 1.1rem; /* AGRANDADO: Los nombres de las dos metas */
+    font-weight: 700;
+}
+
+.meta-valor-pct {
+    font-size: 1.7rem; /* AGRANDADO: Los porcentajes (62% y 89%) ahora se ven enormes */
+    font-weight: 800;
+}
+
+.avance-monto {
+    font-size: 1rem; /* AGRANDADO: El texto "S/ 7.87M de S/ 12.6M" */
+    margin-top: 4px;
+    font-weight: 700;
+}
