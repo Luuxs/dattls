@@ -23,6 +23,7 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    font-size: 1.3rem; /* AGRANDADO MÁXIMO: Base general de texto XXL */
 }
 
 /* ==========================================================================
@@ -42,7 +43,7 @@ body {
     background-color: var(--panel-bg);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 20px;
+    padding: 22px;
 }
 
 /* Distribución exacta a lo ancho de la pantalla de la TV */
@@ -53,10 +54,10 @@ body {
 h2 {
     color: var(--text-main);
     margin-top: 0;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border-left: 4px solid var(--at-red); /* Detalle de marca en el borde izquierdo */
-    padding-left: 10px;
+    font-size: 1.8rem; /* AGRANDADO MÁXIMO: Títulos de secciones imponentes */
+    font-weight: 800;
+    border-left: 6px solid var(--at-red); /* Detalle de marca grueso */
+    padding-left: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -77,9 +78,9 @@ table {
 }
 
 th, td {
-    padding: 12px 10px;
+    padding: 18px 12px; /* AGRANDADO MÁXIMO: Celdas con bastante espacio vertical */
     border-bottom: 1px solid var(--border-color);
-    font-size: 0.9rem;
+    font-size: 1.25rem; /* AGRANDADO MÁXIMO: Números diarios gigantes */
 }
 
 th {
@@ -88,9 +89,9 @@ th {
     position: sticky;
     top: 0;
     z-index: 5;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1.05rem; /* AGRANDADO MÁXIMO: Cabeceras de tabla */
     letter-spacing: 0.5px;
 }
 
@@ -109,16 +110,16 @@ tbody td b {
     background: #0b0b0c;
     border: 1px solid var(--border-color);
     border-radius: 6px;
-    padding: 12px;
+    padding: 16px;
     margin-bottom: 15px;
 }
 
 .card-top h3 {
-    margin: 0 0 8px 0;
-    font-size: 0.9rem;
+    margin: 0 0 12px 0;
+    font-size: 1.3rem; /* AGRANDADO MÁXIMO: Nombre del ranking */
     color: var(--text-main);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .card-top table {
@@ -128,8 +129,8 @@ tbody td b {
 
 .card-top th, .card-top td {
     border: 1px solid var(--border-color);
-    padding: 6px;
-    font-size: 0.85rem;
+    padding: 12px; /* AGRANDADO MÁXIMO: Espaciado interno en los ránkings */
+    font-size: 1.15rem; /* AGRANDADO MÁXIMO: Datos de líderes */
 }
 
 .card-top th {
@@ -146,47 +147,47 @@ tbody td b {
    BLOQUES DE TOTALES ACUMULADOS (COLUMNA DERECHA)
    ========================================================================== */
 .total-box {
-    padding: 25px 20px;
-    border-radius: 6px;
+    padding: 35px 25px; /* AGRANDADO MÁXIMO: Cajas robustas */
+    border-radius: 8px;
     background-color: #0b0b0c;
     border: 1px solid var(--border-color);
-    border-top: 4px solid var(--at-red);
-    margin-bottom: 15px;
+    border-top: 6px solid var(--at-red); /* Franja roja institucional más gruesa */
+    margin-bottom: 20px;
 }
 
 .total-box .label {
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-size: 1rem; /* AGRANDADO MÁXIMO: Etiquetas superiores */
+    font-weight: 800;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .total-box .value {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-top: 8px;
+    font-size: 2.6rem; /* AGRANDADO MÁXIMO: Millonadas en pantalla gigante */
+    font-weight: 900;
+    margin-top: 10px;
     color: var(--text-main);
 }
 
 /* ==========================================================================
-   CUADRO DINÁMICO SEMÁFORO: METAS MUNDIAL 2026 (LOOK OSCURO COMPATIBLE TV)
+   CUADRO DINÁMICO SEMÁFORO: METAS MUNDIAL 2026 (LOOK OSCURO XXL)
    ========================================================================== */
 .cuadro-meta-global {
-    background-color: #0b0b0c; /* Fondo oscuro integrado al dashboard */
+    background-color: #0b0b0c; /* Fondo oscuro original integrado */
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px; /* AGRANDADO MÁXIMO: Margen interno del cuadro de metas */
     border: 2px solid var(--border-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     transition: all 0.4s ease;
 }
 
 .titulo-meta-mundial {
-    margin: 0 0 15px 0;
-    font-size: 1.2rem;
-    font-weight: 800;
+    margin: 0 0 25px 0;
+    font-size: 1.7rem; /* AGRANDADO MÁXIMO: Título del mundial */
+    font-weight: 900;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -198,34 +199,34 @@ tbody td b {
 }
 
 .meta-sub {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: #ffffff; /* Textos de metas en blanco */
+    font-size: 1.3rem; /* AGRANDADO MÁXIMO: Nombre de los productos */
+    font-weight: 800;
+    color: #ffffff;
 }
 
 .meta-valor-pct {
-    font-size: 1.4rem;
-    font-weight: 800;
+    font-size: 2.1rem; /* AGRANDADO MÁXIMO: Los porcentajes se leen desde lejos */
+    font-weight: 900;
 }
 
 .avance-monto {
-    font-size: 0.85rem;
-    margin-top: 2px;
-    font-weight: 700;
+    font-size: 1.15rem; /* AGRANDADO MÁXIMO: Los montos actuales vs metas */
+    margin-top: 6px;
+    font-weight: 800;
 }
 
 .divisor-meta {
     border: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
-    margin: 12px 0;
+    margin: 16px 0;
 }
 
-/* === VARIACIONES DINÁMICAS DE COLOR (SEMÁFORO OSCURO) === */
+/* === VARIACIONES DINÁMICAS DE COLOR (SEMÁFORO OSCURO PREMIUM) === */
 
 /* 🔴 Estado Crítico (Rojo) */
 .panel-meta-rojo {
     border-color: #ef4444 !important;
-    box-shadow: 0 0 10px rgba(239, 68, 68, 0.2);
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
 }
 .panel-meta-rojo .titulo-meta-mundial, 
 .panel-meta-rojo .meta-valor-pct,
@@ -236,7 +237,7 @@ tbody td b {
 /* 🟠 Estado Intermedio (Naranja / Oro) */
 .panel-meta-naranja {
     border-color: #f59e0b !important;
-    box-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
 }
 .panel-meta-naranja .titulo-meta-mundial, 
 .panel-meta-naranja .meta-valor-pct,
@@ -247,7 +248,7 @@ tbody td b {
 /* 🟢 Estado Completado (Verde) */
 .panel-meta-verde {
     border-color: #10b981 !important;
-    box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
 }
 .panel-meta-verde .titulo-meta-mundial, 
 .panel-meta-verde .meta-valor-pct,
@@ -261,126 +262,4 @@ tbody td b {
 @media (max-width: 1200px) {
     .dashboard-container { display: block; }
     .panel { display: block; width: 100%; margin-bottom: 20px; }
-}
-/* ==========================================================================
-   CONFIGURACIÓN GLOBAL (Ajuste de Fuentes)
-   ========================================================================== */
-body {
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
-    font-size: 1.1rem; /* AGRAANDADO: Subimos la base general de la letra */
-}
-
-h2 {
-    color: var(--text-main);
-    margin-top: 0;
-    font-size: 1.5rem; /* AGRANDADO: De 1.2rem a 1.5rem para los títulos principales */
-    font-weight: 700;
-    border-left: 5px solid var(--at-red);
-    padding-left: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* ==========================================================================
-   TABLA DE REGISTRO DIARIO (COLUMNA IZQUIERDA)
-   ========================================================================== */
-th, td {
-    padding: 14px 10px; /* AGRANDADO: Más espacio vertical entre filas */
-    border-bottom: 1px solid var(--border-color);
-    font-size: 1.05rem; /* AGRANDADO: Texto de la tabla principal más grande */
-}
-
-th {
-    background-color: #0b0b0c;
-    color: var(--text-muted);
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.9rem; /* AGRANDADO: Títulos de las columnas */
-    letter-spacing: 0.5px;
-}
-
-/* ==========================================================================
-   CUADROS TOP 3 INDEPENDIENTES (COLUMNA CENTRAL)
-   ========================================================================== */
-.card-top h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.1rem; /* AGRANDADO: Títulos de los ránkings */
-    color: var(--text-main);
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.card-top th, .card-top td {
-    padding: 8px; /* AGRANDADO: Espaciado interno en los rankings */
-    font-size: 1rem; /* AGRANDADO: Letras y números del TOP 3 */
-}
-
-/* ==========================================================================
-   BLOQUES DE TOTALES ACUMULADOS (COLUMNA DERECHA)
-   ========================================================================== */
-.total-box {
-    padding: 28px 20px; /* AGRANDADO: Cajas de totales más robustas */
-    border-radius: 6px;
-    background-color: #0b0b0c;
-    border: 1px solid var(--border-color);
-    border-top: 5px solid var(--at-red);
-    margin-bottom: 15px;
-}
-
-.total-box .label {
-    font-size: 0.85rem; /* AGRANDADO: Etiquetas de TOTAL MONTO */
-    font-weight: 700;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.total-box .value {
-    font-size: 2.2rem; /* AGRANDADO: Los millones acumulados ahora saltan a la vista */
-    font-weight: 800;
-    margin-top: 8px;
-    color: var(--text-main);
-}
-
-/* ==========================================================================
-   CUADRO DINÁMICO SEMÁFORO: METAS MUNDIAL 2026
-   ========================================================================== */
-.cuadro-meta-global {
-    border-radius: 8px;
-    padding: 25px; /* AGRANDADO: Más empaque para el cuadro de metas */
-    border: 2px solid #e2e8f0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.titulo-meta-mundial {
-    margin: 0 0 20px 0;
-    font-size: 1.4rem; /* AGRANDADO: El título superior del Mundial */
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-.meta-sub {
-    font-size: 1.1rem; /* AGRANDADO: Los nombres de las dos metas */
-    font-weight: 700;
-}
-
-.meta-valor-pct {
-    font-size: 1.7rem; /* AGRANDADO: Los porcentajes (62% y 89%) ahora se ven enormes */
-    font-weight: 800;
-}
-
-.avance-monto {
-    font-size: 1rem; /* AGRANDADO: El texto "S/ 7.87M de S/ 12.6M" */
-    margin-top: 4px;
-    font-weight: 700;
 }
