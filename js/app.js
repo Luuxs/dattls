@@ -127,7 +127,7 @@ function renderizarDashboard(data) {
         // Inyectamos la estructura limpia estilo oscuro neón
         contenedorMetas.innerHTML = 
             '<div class="cuadro-meta-global ' + claseSemaforoGlobal + '">' +
-                '<h3 class="titulo-meta-mundial">METAS MUNDIAL 2026</h3>' +
+                '<h3 class="titulo-meta-mundial">META JULIO</h3>' +
                 
                 '' +
                 '<div class="fila-meta-dato">' +
